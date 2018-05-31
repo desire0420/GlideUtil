@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="city">城市:</string>
+    <string name="wd">\n风向:</string>
+    <string name="ws">\n风级:</string>
+    <string name="time">\n发布时间:</string>
+    <string name="net_error">网络不给力</string>
+    <string name="title">MVP+Retrofit+Rxjava2</string>
+    <string name="text0">普通写法(Retrofit)</string>
+    <string name="text1">普通写法(Retrofit+Rxjava)</string>
+    <string name="text2">MVP+Retrofit+Rxjava</string>
+    <string name="glide">获取Glide磁盘缓存大小</string>
+    <string name="yaphetzhao_glidecatchsimple">YaphetZhao GlideCatchSimple</string>
+    <string name="glide_clean">清除Glide磁盘缓存，手动删除缓存文件夹中文件方法</string>
+    <string name="glide_catch_memory">清除Glide内存缓存</string>
+    <string name="glide_clean_catch_disk_self">清除Glide磁盘缓存，使用Glide自带方法</string>
+    <string name="refresh_adapter">刷新列表适配器</string>
+    <string name="zhu">注* 清除缓存后退出应用重新进入可重建缓存</string>
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="deeper_transparent">#aa000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="black">#2F3033</color>
+    <color name="black1">#333333</color>
+    <color name="gary">#606266</color>
+    <color name="gary1">#939599</color>
+    <color name="gary3">#606266</color>
+    <color name="gary4">#F2F2F2</color>
+    <color name="gary5">#D3D8E0</color>
+    <color name="gary6">#9A9898</color>
+    <color name="gary7">#999999</color>
+    <color name="gary8">#666666</color>
+    <color name="gray_tint">#C4C7CC</color>
+    <color name="search_bg">#F5F7FA</color>
+    <color name="blue">#4984EF</color>
+    <color name="blue1">#3168CB</color>
+    <color name="blue2">#3A69BF</color>
+    <drawable name="charIndexColor">#33000000</drawable>
+
+    <color name="white">#FFFFFF</color>
+    <color name="white1">#FAFBFC</color>
+    <color name="cut_color">#EBEDF0</color>
+    <color name="backgroung">#F0F1F2</color>
+    <color name="et_hint">#bcbcbc</color>
+    <color name="shop_share">#12AD6C</color>
+    <color name="border_color">#D0D3D9</color>
+
+
+    <!--视觉规范分割线   上面的是规范-->
+    <color name="cut_off_rule">#dddddd</color>
+    <color name="orange">#FF6633</color>
+    <color name="green">#37D14C</color>
+    <color name="yellow">#F7BC31</color>
+    <color name="red">#EB5353</color>
+
+
+    <color name="colorDefault">#ffffff</color>
+    <color name="colorBackground">#f1f0f6</color>
+    <color name="colorText">#9b9b9b</color>
+
+
+    <color name="main_color_blue">#4984EF</color>
+
+    <color name="tab_select_color">#2F3033</color>
+    <color name="tab_default_color">#2F3033</color>
+    <color name="shop_unshare">#FA4336</color>
+
+    <!-- 优惠券选择-->
+    <color name="coupon_amount">#F3701F</color>
+    <color name="coupon_discount">#3F51B5</color>
+
+
+    <drawable name="item_touch_bg">#F5F7FA</drawable>
+    <drawable name="item_normal_bg">@color/white</drawable>
+
+    <drawable name="knb_pro_bg">@color/blue</drawable>
+    <drawable name="knb_pro_color">@color/blue1</drawable>
+    <drawable name="knb_pro_color2">@color/blue2</drawable>
+
+
+</resources>
