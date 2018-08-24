@@ -1,73 +1,56 @@
 package tongxunlu.com.myapplication;
 
 import android.os.Bundle;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.RecyclerView;
+import android.text.Editable;
+import android.text.InputFilter;
+import android.text.TextUtils;
+import android.text.TextWatcher;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.math.BigDecimal;
+import java.text.DecimalFormat;
+
+import tongxunlu.com.myapplication.adapter.StringHelp;
+
 
 public class MainActivity extends AppCompatActivity {
-    Button jsbridge;
-    TabLayout mTabLayout;
-    ViewPager mViewPager;
-    ViewPagerAdapter mAdapter;
-    private final List<Fragment> mFragmentList = new ArrayList<>();
-    private final List<String> mFragmentTitleList = new ArrayList<>();
+
+    RecyclerView mRecyclerView;
+    EditText edit;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        findViews();
+        edit = findViewById(R.id.edit);
+        edit.setFilters(new InputFilter[]{new MoneyInputFilter().setDigits(2)});
+        edit.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                String str = s.toString();
+                //最大值只能输入9999999
+
+
+            }
+        });
+
     }
 
 
-    private void findViews() {
-        jsbridge = findViewById(R.id.jsbridge);
-        mTabLayout = (TabLayout) findViewById(R.id.tabLayout);
-        mViewPager = (ViewPager) findViewById(R.id.viewPager);
-
-        mFragmentList.add(new FirstFragment());
-        mFragmentList.add(new SecondFragment());
-        mFragmentList.add(new ThreadFragment());
-
-
-        mFragmentTitleList.add("第一个");
-        mFragmentTitleList.add("第二个");
-        mFragmentTitleList.add("第三个");
-       // mFragmentTitleList.add("第四个");
-
-        mAdapter = new ViewPagerAdapter(getSupportFragmentManager());
-        mViewPager.setAdapter(mAdapter);
-        mViewPager.setOffscreenPageLimit(1);
-        mTabLayout.setupWithViewPager(mViewPager);
-    }
-
-    private class ViewPagerAdapter extends FragmentPagerAdapter {
-
-        public ViewPagerAdapter(android.support.v4.app.FragmentManager fragmentManager) {
-            super(fragmentManager);
-        }
-
-        @Override
-        public Fragment getItem(int position) {
-            return mFragmentList.get(position);
-        }
-
-        @Override
-        public int getCount() {
-            return mFragmentList.size();
-        }
-
-        @Override
-        public CharSequence getPageTitle(int position) {
-            return mFragmentTitleList.get(position);
-        }
-    }
 }
