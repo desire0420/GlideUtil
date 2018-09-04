@@ -22,11 +22,21 @@ public class CoreApplication extends Application {
 
     }
 
+    String username;
+
     public static CoreApplication getInstance() {
         if (sInstance == null) {
             throw new IllegalStateException("Application has not been created");
         }
         return sInstance;
+    }
+
+    String getUsername() {
+        return username;
+    }
+
+    void setUsername(String username) {
+        this.username = username;
     }
 
 
